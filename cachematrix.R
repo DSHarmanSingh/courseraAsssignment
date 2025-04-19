@@ -32,10 +32,10 @@ cacheSolve<- function(x, ...){
 m <- matrix(c(2,1,1,2), 2,2)
 
 #Create a special object
-cacheMatrix<- makeCacheMatrix(m)
+cachedMatrix<- makeCacheMatrix(m)
 
 #First call: computes inverse
-cacheSolve(cacheMatrix)
+cacheSolve(cachedMatrix)
 
 #Second call: uses cached inverse
-cacheSolve(cacheMatrix)
+cacheSolve(cachedMatrix)
